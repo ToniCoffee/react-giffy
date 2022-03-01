@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --title-color: rgb(109, 75, 131);
+  --fz: 16px;
+  --theme--contrast-0: #121212;
+  --theme-body-bg: #18061f;
+  --theme-body-txt: #f3f3f3;
+  --search-size-mx-h: 3rem;
+  --zIndex-header: 20;
+  --zIndex-component: 5;
+  --brand-color_1: #00ff99;
+  --brand-color_2: #00ccff;
+  --brand-color_3: #9933ff;
+  --brand-color_4: #9933ff;
+  --brand-color_5: #fff35c;
+  --brand-color_6: #8429de;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--fz);
+  background-color: var(--theme-body-bg);
+  color: var(--theme-body-txt);
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-content {
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 16px;
+}
+
+.App-logo {
+  margin: 10px auto;
+  padding: 20px;
+  width: 144px;
+}
+
+.App-logo img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.App-logo img:hover  {
+  filter: invert(60%) sepia(37%) saturate(5201%) hue-rotate(263deg) brightness(72%) contrast(133%) drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  -webkit-filter: invert(60%) sepia(37%) saturate(5201%) hue-rotate(263deg) brightness(72%) contrast(133%) drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  cursor: pointer;
+}
+
+.App-logo, .App-title {
+  color: var(--title-color);
+}
+
+.App-title {
+  margin-bottom: 20px;
+}
+
+.btn {
+  border: 1px solid transparent;
+  background-color: var(--brand-color_3);
+  border-radius: 5px;
+  color: var(--theme-body-txt);
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--brand-color_6);
+}
+
+.btn[disabled] {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.o-header {
+  background-color: inherit;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  max-height: 3rem;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-error { 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.page-error .code-error {
+  font-size: 5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.page-error .msg-error {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.page-error .gif-error {
+  margin: 1rem auto;
+  width: 250px;
+  height: 250px;
+}
+
+.center-page {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.center-page-item {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.center-page-item h4 {
+  margin-bottom: 1rem;
+}
+
+.center-page-item strong {
+  display: block;
+}

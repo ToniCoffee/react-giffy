@@ -1,0 +1,23 @@
+.finder {
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  /* gap: 0 5px; */
+}
+
+.finder input {
+  text-indent: 5px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 10px 0 0 10px;
+}
+
+.finder button {
+  padding: .2rem .5rem;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(43, 142, 255);
+  color: white;
+  text-shadow: 2px 2px 2px #999;
+}
