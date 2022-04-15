@@ -1,5 +1,4 @@
-// const ENDPOINT = 'http://localhost:8000';
-const ENDPOINT = 'https://deno-api-users-login.herokuapp.com';
+import { ENDPOINT } from 'util/imports';
 
 export const loginService = ({username, password}) => {
   return fetch(`${ENDPOINT}/login`, {

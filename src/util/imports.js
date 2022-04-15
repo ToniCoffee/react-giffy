@@ -29,7 +29,7 @@ import { registerService } from 'services/register';
 import { addFavService } from 'services/addFav';
 import { deleteFavService } from 'services/deleteFav';
 import { getFavsService } from 'services/getFavs';
-import { API_KEY, API_URL } from 'services/settings';
+import { API_KEY, API_URL, ENDPOINT } from 'services/settings';
 // import { Home } from 'pages/home/index';
 import { Detail } from 'pages/detail/index';
 import { SearchResults } from 'pages/search-results/index';
@@ -94,6 +94,7 @@ export {
   // useSEO,
   API_KEY,
   API_URL,
+  ENDPOINT,
   Home,
   Detail,
   SearchResults,
