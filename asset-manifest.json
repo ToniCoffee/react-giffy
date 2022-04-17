@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-giffy/static/css/main.e0fcb8e2.css",
+    "main.css": "/react-giffy/static/css/main.8c422b88.css",
     "main.js": "/react-giffy/static/js/main.5b7f037e.js",
     "static/css/922.31d6cfe0.chunk.css": "/react-giffy/static/css/922.31d6cfe0.chunk.css",
     "static/js/922.770507c9.chunk.js": "/react-giffy/static/js/922.770507c9.chunk.js",
@@ -8,14 +8,14 @@
     "static/js/132.21219793.chunk.js": "/react-giffy/static/js/132.21219793.chunk.js",
     "static/media/giffy.svg": "/react-giffy/static/media/giffy.a1fa51cf62087b4355b4c36d717feea8.svg",
     "index.html": "/react-giffy/index.html",
-    "main.e0fcb8e2.css.map": "/react-giffy/static/css/main.e0fcb8e2.css.map",
+    "main.8c422b88.css.map": "/react-giffy/static/css/main.8c422b88.css.map",
     "main.5b7f037e.js.map": "/react-giffy/static/js/main.5b7f037e.js.map",
     "922.770507c9.chunk.js.map": "/react-giffy/static/js/922.770507c9.chunk.js.map",
     "111.5dcf80de.chunk.js.map": "/react-giffy/static/js/111.5dcf80de.chunk.js.map",
     "132.21219793.chunk.js.map": "/react-giffy/static/js/132.21219793.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0fcb8e2.css",
+    "static/css/main.8c422b88.css",
     "static/js/main.5b7f037e.js"
   ]
 }
