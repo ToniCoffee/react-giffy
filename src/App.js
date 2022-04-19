@@ -11,7 +11,8 @@ import {
   Detail,
   SearchResults,
   GifsContextProvider,
-  UserContextProvider
+  UserContextProvider,
+  routes
 } from 'util/imports';
 
 import 'styles.css';
@@ -25,15 +26,15 @@ export default function App() {
             <Header />
             <GifsContextProvider>
               <Switch>
-                <Route path="/" component={Home} />
+                <Route path={routes.home} component={Home} />
                 <Route
-                  path="/search/:keyword/:rating?"
+                  path={routes.search}
                   component={SearchResults}
                 />
-                <Route path="/gif/:id" component={Detail} />
-                <Route path="/login" component={LoginPage} />
-                <Route path="/register" component={RegisterPage} />
-                <Route path="/:rest*" component={ErrorPage} />
+                <Route path={routes.gif} component={Detail} />
+                <Route path={routes.login} component={LoginPage} />
+                <Route path={routes.register} component={RegisterPage} />
+                <Route path={routes.error} component={ErrorPage} />
               </Switch>
             </GifsContextProvider>
           </section>

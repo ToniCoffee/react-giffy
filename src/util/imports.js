@@ -29,7 +29,6 @@ import { registerService } from 'services/register';
 import { addFavService } from 'services/addFav';
 import { deleteFavService } from 'services/deleteFav';
 import { getFavsService } from 'services/getFavs';
-import { API_KEY, API_URL, ENDPOINT } from 'services/settings';
 // import { Home } from 'pages/home/index';
 import { Detail } from 'pages/detail/index';
 import { SearchResults } from 'pages/search-results/index';
@@ -45,6 +44,7 @@ import { useUser } from 'hooks/useUser';
 import { StaticContext } from 'context/static-context';
 import { GifsContextProvider, GifsContext } from 'context/gifs-context';
 import { UserContextProvider, UserContext } from 'context/user-context';
+import { routes } from 'util/routes';
 import debounce from 'just-debounce-it';
 
 const Home = lazy(
@@ -92,9 +92,6 @@ export {
   deleteFavService,
   getFavsService,
   // useSEO,
-  API_KEY,
-  API_URL,
-  ENDPOINT,
   Home,
   Detail,
   SearchResults,
@@ -111,5 +108,6 @@ export {
   GifsContextProvider,
   UserContext,
   UserContextProvider,
-  debounce
+  debounce,
+  routes
 };

@@ -1,5 +1,3 @@
-import { API_KEY, API_URL } from 'util/imports';
-
 const fromApiResponseToGifs = apiResponse => {
   const {data} = apiResponse;
   const {images, title, id} = data;
@@ -8,7 +6,7 @@ const fromApiResponseToGifs = apiResponse => {
 };
 
 export const getSingleGif = ({id}) => {
-  const apiUrl = `${API_URL}/gifs/${id}?api_key=${API_KEY}`;
+  const apiUrl = `https://${process.env.REACT_APP_API_URL}/gifs/${id}?api_key=${process.env.REACT_APP_API_KEY}`;
 
   return fetch(apiUrl)
     .then(res => res.json())

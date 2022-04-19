@@ -1,11 +1,11 @@
-import { Link, useUser, useRoute } from 'util/imports';
+import { Link, useUser, useRoute, routes } from 'util/imports';
 
 import './styles.css';
 
 export const Header = () => {
   const {isLogged, logout} = useUser();
-  const [matchLogin] = useRoute('/login');
-  const [matchRegister] = useRoute('/register');
+  const [matchLogin] = useRoute(routes.login);
+  const [matchRegister] = useRoute(routes.register);
   // const [matchError] = useRoute('/:rest*');
 
   const handleClick = e => {
@@ -15,10 +15,10 @@ export const Header = () => {
 
   const renderLoginButtons = ({isLogged}) => {
     return isLogged 
-      ? <Link to="#" onClick={handleClick}>Logout</Link>
+      ? <Link to={routes.home} onClick={handleClick}>Logout</Link>
       : <>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
+        <Link to={routes.login}>Login</Link>
+        <Link to={routes.register}>Register</Link>
       </>;
   };
 

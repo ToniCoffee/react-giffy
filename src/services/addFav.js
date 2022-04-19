@@ -1,7 +1,5 @@
-import { ENDPOINT } from 'util/imports';
-
 export const addFavService = ({id, jwt}) => {
-  return fetch(`${ENDPOINT}/favs/${id}`, {
+  return fetch(`https://${process.env.REACT_APP_ENDPOINT}/favs/${id}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

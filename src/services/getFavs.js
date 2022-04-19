@@ -1,7 +1,5 @@
-import { ENDPOINT } from 'util/imports';
-
 export const getFavsService = ({jwt}) => {
-  return fetch(`${ENDPOINT}/favs`, {
+  return fetch(`https://${process.env.REACT_APP_ENDPOINT}/favs`, {
     method: 'GET',
     headers: {
       'Authorization': jwt,

@@ -1,5 +1,3 @@
-import { API_KEY, API_URL } from 'util/imports';
-
 const fromApiResponseToGifs = apiResponse => {
   const {data = []} = apiResponse;
   if(Array.isArray(data)) {
@@ -15,7 +13,7 @@ const fromApiResponseToGifs = apiResponse => {
 };
 
 export const getGifs = ({limit= 10, keyword = 'morty', rating = 'g', page = 0} = {}) => {
-  const apiUrl = `${API_URL}/gifs/search?api_key=${API_KEY}&q=${keyword}&limit=${limit}&offset=${page * limit}&rating=${rating}&lang=en`;
+  const apiUrl = `https://${process.env.REACT_APP_API_URL}/gifs/search?api_key=${process.env.REACT_APP_API_KEY}&q=${keyword}&limit=${limit}&offset=${page * limit}&rating=${rating}&lang=en`;
 
   return fetch(apiUrl)
     .then(res => res.json())

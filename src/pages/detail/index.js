@@ -30,7 +30,7 @@ export const Detail = ({params}) => {
     );
   }
 
-  if(isError) return <Redirect to='/404' />;
+  if(isError) return <Redirect to={`${process.env.PUBLIC_URL}/404`} />;
   if(!gif) return null;
 
   return <div className="details-page">

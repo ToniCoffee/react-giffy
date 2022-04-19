@@ -1,12 +1,10 @@
-import { API_KEY, API_URL } from 'util/imports';
-
 const fromApiResponseToGifs = apiResponse => {
   const {data = []} = apiResponse;
   return data;
 };
 
 export const getTrendingTerms = () => {
-  const apiUrl = `${API_URL}/trending/searches?api_key=${API_KEY}`;
+  const apiUrl = `https://${process.env.REACT_APP_API_URL}/trending/searches?api_key=${process.env.REACT_APP_API_KEY}`;
 
   return fetch(apiUrl)
     .then(res => res.json())

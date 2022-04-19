@@ -1,4 +1,4 @@
-import { registerService, useState, useLocation, useCallback } from 'util/imports';
+import { registerService, useState, useLocation, useCallback, routes } from 'util/imports';
 import { useForm } from 'react-hook-form';
 
 export const Register = () => {
@@ -18,7 +18,7 @@ export const Register = () => {
 
   const redirectToHome = useCallback(() => {
     setTimeout(() => {
-      pushLocation('/');
+      pushLocation(routes.home);
     }, 3000);
   }, [pushLocation]);
 

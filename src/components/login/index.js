@@ -1,4 +1,4 @@
-import { useState, useEffect, useLocation, useUser } from 'util/imports';
+import { useState, useEffect, useLocation, useUser, routes } from 'util/imports';
 
 import './styles.css';
 
@@ -10,7 +10,7 @@ export const Login = ({onLogin}) => {
 
   useEffect(() => {
     if(isLogged) {
-      pushLocation('/');
+      pushLocation(routes.home);
       onLogin && onLogin();
     }
   }, [isLogged, pushLocation, onLogin]);

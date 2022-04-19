@@ -1,7 +1,5 @@
-import { ENDPOINT } from 'util/imports';
-
 export const registerService = ({username, password}) => {
-  return fetch(`${ENDPOINT}/register`, {
+  return fetch(`https://${process.env.REACT_APP_ENDPOINT}/register`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

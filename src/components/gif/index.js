@@ -7,7 +7,7 @@ const GifComponent = ({id, title, url}) => {
       <div className="gif-buttons">
         <Fav id={id} />
       </div>
-      <Link to={`/gif/${id}`} className="gif-link">
+      <Link to={`${process.env.PUBLIC_URL}/gif/${id}`} className="gif-link">
         <h4>{title}</h4>
         <img loading='lazy' src={url} alt={title} />
       </Link>

@@ -21,7 +21,7 @@ export const ErrorPage = () => {
           <span className="code-error">404</span>
           <span className="msg-error">Sometimes gettings lost isn&apos;t that bad</span>
           <img className="gif-error" src={randomImage()} alt="alt-page-404"/>
-          <Link href='/' class="btn">Go to home</Link>
+          <Link href={`${process.env.PUBLIC_URL}`} class="btn">Go to home</Link>
         </div>
       </div>
     </>

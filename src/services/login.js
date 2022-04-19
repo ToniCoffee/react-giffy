@@ -1,7 +1,5 @@
-import { ENDPOINT } from 'util/imports';
-
 export const loginService = ({username, password}) => {
-  return fetch(`${ENDPOINT}/login`, {
+  return fetch(`https://${process.env.REACT_APP_ENDPOINT}/login`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

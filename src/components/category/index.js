@@ -10,7 +10,7 @@ export const Category = ({name = 'Default name', options = []}) => {
         {
           options.map(popularGifs => (
             <li key={popularGifs} >
-              <Link to={`/search/${popularGifs}`}>
+              <Link to={`${process.env.PUBLIC_URL}/search/${popularGifs}`}>
                 Gifs de {popularGifs}
               </Link>
             </li>

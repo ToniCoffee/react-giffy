@@ -13,7 +13,7 @@ const SearchFormComponent = ({ initialKeyword = '', initialRating = 'g' }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    pushLocation(`/search/${keyword}/${rating}`);
+    pushLocation(`${process.env.PUBLIC_URL}/search/${keyword}/${rating}`);
   };
 
   const handleChange = (e) => updateKeyword(e.target.value);
