@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/react-giffy/static/css/main.3ae01fd3.css",
-    "main.js": "/react-giffy/static/js/main.0912ab69.js",
+    "main.js": "/react-giffy/static/js/main.ff118bc5.js",
     "static/css/922.31d6cfe0.chunk.css": "/react-giffy/static/css/922.31d6cfe0.chunk.css",
-    "static/js/922.a8186561.chunk.js": "/react-giffy/static/js/922.a8186561.chunk.js",
-    "static/js/111.661f4dd9.chunk.js": "/react-giffy/static/js/111.661f4dd9.chunk.js",
+    "static/js/922.d4fddf8e.chunk.js": "/react-giffy/static/js/922.d4fddf8e.chunk.js",
+    "static/js/111.6dc38afa.chunk.js": "/react-giffy/static/js/111.6dc38afa.chunk.js",
     "static/js/132.21219793.chunk.js": "/react-giffy/static/js/132.21219793.chunk.js",
     "static/media/giffy.svg": "/react-giffy/static/media/giffy.a1fa51cf62087b4355b4c36d717feea8.svg",
     "index.html": "/react-giffy/index.html",
     "main.3ae01fd3.css.map": "/react-giffy/static/css/main.3ae01fd3.css.map",
-    "main.0912ab69.js.map": "/react-giffy/static/js/main.0912ab69.js.map",
-    "922.a8186561.chunk.js.map": "/react-giffy/static/js/922.a8186561.chunk.js.map",
-    "111.661f4dd9.chunk.js.map": "/react-giffy/static/js/111.661f4dd9.chunk.js.map",
+    "main.ff118bc5.js.map": "/react-giffy/static/js/main.ff118bc5.js.map",
+    "922.d4fddf8e.chunk.js.map": "/react-giffy/static/js/922.d4fddf8e.chunk.js.map",
+    "111.6dc38afa.chunk.js.map": "/react-giffy/static/js/111.6dc38afa.chunk.js.map",
     "132.21219793.chunk.js.map": "/react-giffy/static/js/132.21219793.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ae01fd3.css",
-    "static/js/main.0912ab69.js"
+    "static/js/main.ff118bc5.js"
   ]
 }

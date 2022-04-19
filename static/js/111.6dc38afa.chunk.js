@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact=self.webpackChunkreact||[]).push([[111],{111:function(n,e,t){t.r(e),t.d(e,{Trending:function(){return a}});var r=t(430),c=t(606),u=t(184),a=function(){var n=(0,c.eJ)([]),e=(0,r.Z)(n,2),t=e[0],a=e[1];return(0,c.d4)((function(){(0,c.yX)().then(a)}),[]),(0,u.jsx)(c.WD,{name:"Tendencias",options:t})}}}]);
+//# sourceMappingURL=111.6dc38afa.chunk.js.map
